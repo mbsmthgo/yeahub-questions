@@ -1,0 +1,100 @@
+.questions-container {
+    width: 70%;
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 5px -2.5px rgba(0, 0, 0, 0.3);
+    gap: 30px;
+}
+.questions__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.questions__title {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.questions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.questions__question-container {
+    width: 100%;
+    padding: 15px 20px;
+    box-shadow: 0 1px 5px -2.5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    list-style-position: inside;
+    white-space: nowrap;
+}
+.questions__question-container::marker {
+    color: #6A0BFF;
+    font-size: 1.5rem;
+}
+.questions__question-wrapper {
+    width: 95%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.questions__question {
+    position: relative;
+    left: -15px;
+    font-size: 1.2rem;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.questions__arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.questions__question-body {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.question__badges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.question__badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #F8F8F8;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+.question__badge-icon {
+    background: #6A0BFF;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 5px;
+}
+.question__answer {
+    overflow-wrap: break-word;
+    white-space: normal;
+    color: #474747;
+    overflow-x: auto;
+}
+.notFound-msg {
+    font-size: 1.2rem;
+}
+@media (max-width: 1024px) {
+    .questions-container {
+        width: 100%;
+    }
+}

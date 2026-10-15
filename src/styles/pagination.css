@@ -40,4 +40,10 @@
     .page-arrow {
         padding: 4px;
     }
+    .pagination {
+        gap: 8px;
+    }
+    .page-number {
+        padding: 6px;
+    }
 }

@@ -15,3 +15,114 @@ html, body, #root {
     display: flex;
     flex-direction: column;
 }
+
+.btn__primary {
+    border: none;
+    background: #6A0BFF;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn__primary:hover {
+    background: #5500E6;
+}
+.btn__secondary {
+    border: none;
+    background: none;
+    color: #6A0BFF;
+    cursor: pointer;
+}
+.question__badges {
+    display: flex;
+    align-items: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+.question__badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F8F8F8;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    max-width: 135px;
+}
+.question__badge-icon {
+    background: #6A0BFF;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 5px;
+}
+.error-message {
+    width: 100%;
+    color: crimson;
+    text-align: center;
+}
+.menu-btn {
+    display: none;
+}
+.close-btn {
+    display: none;
+}
+.search-container {
+    background: white;
+    border-radius: 25px;
+    padding: 25px ;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.search-container.main {
+    width: 30%;
+    box-shadow: 0 1px 5px -2.5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+    .menu-btn {
+        cursor: pointer;
+        background: none;
+        border: 1px solid #A3A3A3;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+    }
+    .close-btn {
+        display: block;
+        background: none;
+        border: none;
+        width: 0;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: -10px;
+        margin-bottom: -15px;
+    }
+    .search-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+        border-radius: 0;
+        box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    .search-container.open {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 575px) {
+    .search-container {
+        width: 100vw;
+        height: 75vh;
+    }
+}

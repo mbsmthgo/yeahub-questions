@@ -1,0 +1,19 @@
+.notFound-container {
+    padding: 40px 75px 40px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex: 1 0 auto;
+}
+@media (max-width: 575px) {
+    .notFound-title {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .notFound-container {
+        padding: 20px;
+    }
+}

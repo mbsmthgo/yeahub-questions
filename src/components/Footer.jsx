@@ -1,30 +1,35 @@
 import '../styles/footer.css'
+import figmaIcon from '../assets/figma.svg'
+import tgIcon from '../assets/tg.svg'
+import youtubeIcon from '../assets/youtube.svg'
+import ttIcon from '../assets/tt.svg'
+import gitIcon from '../assets/git.svg'
 
 const media = [
     {
         id: 1,
         name: 'Figma',
-        icon: 'src/assets/figma.svg'
+        icon: figmaIcon
     },
     {
         id: 2,
         name: 'Telegram',
-        icon: 'src/assets/tg.svg'
+        icon: tgIcon
     },
     {
         id: 3,
         name: 'Youtube',
-        icon: 'src/assets/youtube.svg'
+        icon: youtubeIcon
     },
     {
         id: 4,
         name: 'TikTok',
-        icon: 'src/assets/tt.svg'
+        icon: ttIcon
     },
     {
         id: 5,
         name: 'Github',
-        icon: 'src/assets/git.svg'
+        icon: gitIcon
     }
 ]
 

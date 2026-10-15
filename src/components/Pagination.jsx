@@ -1,5 +1,6 @@
 import '../styles/pagination.css'
 import {generatePagesRange} from "../utils/generatePagesRange.js";
+import arrowLeftRightIcon from '../assets/arrow-left.svg'
 
 export default function Pagination({totalPages, currentPage, handlePageClick, handleNextPage, handlePreviousPage}) {
     const pages = generatePagesRange(totalPages, currentPage)
@@ -7,7 +8,7 @@ export default function Pagination({totalPages, currentPage, handlePageClick, ha
         <div className='pagination'>
             <button onClick={handlePreviousPage} disabled={currentPage <= 1}
                 className='page-arrow'>
-                <img src='src/assets/arrow-left.svg' alt='Arrow Left'/>
+                <img src={arrowLeftRightIcon} alt='Arrow Left Icon'/>
             </button>
             <div className='page-list'>
                 {pages.map((page, index) => {
@@ -25,7 +26,7 @@ export default function Pagination({totalPages, currentPage, handlePageClick, ha
             <button onClick={handleNextPage} disabled={currentPage >= totalPages}
                 className='page-arrow'>
                 <img style={{transform: 'rotate(180deg)'}}
-                    src='src/assets/arrow-left.svg' alt='Arrow Right'/>
+                    src={arrowLeftRightIcon} alt='Arrow Right'/>
             </button>
         </div>
     )

@@ -24,3 +24,27 @@ export const getQuestions = async (page = 1, limit = 10, filters) => {
         throw error
     }
 }
+
+export const getQuestionsById = async (questionId) => {
+    try {
+        const response = await fetch(`https://api.yeatwork.ru/questions/public-questions/${questionId}`)
+        if (!response.ok) {
+            throw new Error(`Ошибка сервера ${response.status}`)
+        }
+        return response.json()
+    } catch (error) {
+        throw error
+    }
+}
+
+export const getCategories = async (query) => {
+    try {
+        const response = await fetch(`https://api.yeatwork.ru/${query}`)
+        if (!response.ok) {
+            throw new Error(`Ошибка сервера ${response.status}`)
+        }
+        return response.json()
+    } catch (error) {
+        throw error
+    }
+}

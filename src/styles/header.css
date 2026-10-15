@@ -38,22 +38,7 @@
     align-items: center;
     gap: 25px;
 }
-.btn__secondary {
-    border: none;
-    background: none;
-    color: #6A0BFF;
-    font-weight: 500;
-    cursor: pointer;
-}
-.btn__primary {
-    border: none;
-    background: #6A0BFF;
-    color: white;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 @media (max-width: 1024px) {
     .header__dropdown {
         display: flex;
